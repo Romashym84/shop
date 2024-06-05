@@ -1,0 +1,235 @@
+html {
+    font-family: "Lexend", sans-serif;
+}
+
+body {
+    margin: 0px;
+}
+
+.header {
+    top: 0;
+    position: sticky;
+    display: flex;
+    flex-wrap: wrap;
+    height: 120px;
+    background: #7f80ff;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.korz-logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.korz-logo img {
+    width: 50px;
+    height: auto;
+}
+
+.korz__quantity {
+    padding-left: 20px;
+    font-size: 30px;
+}
+
+.korz__user {
+    margin: auto;
+    bottom: 0;
+    top: 0;
+    overflow: auto;
+    max-height: 90vh;
+    max-width: 90%;
+    right: 0;
+    left: 0;
+    height: fit-content;
+    width: -webkit-fill-available;
+    position: fixed;
+    border: 2px solid black;
+    border-radius: 5px;
+    z-index: 2;
+    transform: translateY(-120vh);
+    opacity: 0;
+    transition: transform 220ms ease-in-out, opacity 220ms ease-in-out;
+}
+
+.korz__user:before {
+    z-index: -1;
+    content: '';
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #000;
+    opacity: 0.5;
+}
+
+.korz__user--show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.korz__user-header {
+    padding: 8px;
+    background: #d5f7ff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.korz__user-head {
+    font-family: inherit;
+    font-size: xx-large;
+}
+
+.korz__user-closet {
+    max-height: 25px;
+}
+
+.korz__user-content {
+    padding: 9px;
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.korz__user-product-image img {
+    max-width: 150px;
+    object-fit: contain;
+    width: 100%;
+    height: 130px;
+}
+
+.korz__user-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.korz__user-product {
+    width: 100%;
+    border-bottom: 1px solid #e9e9e9;
+    border-right: 1px solid #e9e9e9;
+    box-sizing: border-box;
+    padding: 9px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.korz__user-product-quantiti {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+.korz__user-product-price{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.korz__button-all-price{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.korz__user-delete {
+    max-height: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.korz__user-all-price {
+    padding-bottom: 10px;
+    background: beige;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding-top: 9px;
+}
+
+.card {
+    padding: 16px;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    border-bottom: 1px solid #e9e9e9;
+    border-right: 1px solid #e9e9e9;
+    box-sizing: border-box;
+    width: 33%;
+}
+
+.image img {
+    object-fit: contain;
+    width: 100%;
+    height: 276px;
+}
+
+.name {
+    font-weight: 900;
+    font-size: large;
+}
+
+.price {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Lexend';
+    font-weight: 500;
+    font-size: x-large;
+}
+
+.quantity {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.quantity__shop {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.quantity__sklad {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.add__product-korz img {
+    width: 50px;
+    height: auto;
+}
+
+.product__item {
+    display: flex;
+    flex-wrap: wrap;
+}
